@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF4569481B1F950C00AD9E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569471B1F950C00AD9E86 /* AppDelegate.swift */; };
-		AF45694A1B1F950C00AD9E86 /* BrewstributionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569491B1F950C00AD9E86 /* BrewstributionViewController.swift */; };
+		AF45694A1B1F950C00AD9E86 /* SelectStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569491B1F950C00AD9E86 /* SelectStateViewController.swift */; };
 		AF45694D1B1F950C00AD9E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF45694B1B1F950C00AD9E86 /* Main.storyboard */; };
 		AF45694F1B1F950C00AD9E86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF45694E1B1F950C00AD9E86 /* Images.xcassets */; };
 		AF4569521B1F950C00AD9E86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4569501B1F950C00AD9E86 /* LaunchScreen.xib */; };
@@ -31,6 +31,7 @@
 		AF4569871B1F992500AD9E86 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4569861B1F992500AD9E86 /* Social.framework */; };
 		AF4569891B1FC6D600AD9E86 /* BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */; };
 		AF45698B1B1FECB700AD9E86 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF45698A1B1FECB700AD9E86 /* Keys.plist */; };
+		AFB95A541B20FAB700301798 /* SelectBreweryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		AF4569421B1F950C00AD9E86 /* Brewstribution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewstribution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4569461B1F950C00AD9E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4569471B1F950C00AD9E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF4569491B1F950C00AD9E86 /* BrewstributionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewstributionViewController.swift; sourceTree = "<group>"; };
+		AF4569491B1F950C00AD9E86 /* SelectStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStateViewController.swift; sourceTree = "<group>"; };
 		AF45694C1B1F950C00AD9E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF45694E1B1F950C00AD9E86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF4569511B1F950C00AD9E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		AF4569861B1F992500AD9E86 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweriesViewController.swift; sourceTree = "<group>"; };
 		AF45698A1B1FECB700AD9E86 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBreweryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				AF4569471B1F950C00AD9E86 /* AppDelegate.swift */,
-				AF4569491B1F950C00AD9E86 /* BrewstributionViewController.swift */,
-				AF45694B1B1F950C00AD9E86 /* Main.storyboard */,
+				AF4569491B1F950C00AD9E86 /* SelectStateViewController.swift */,
+				AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */,
 				AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */,
-				AF45694E1B1F950C00AD9E86 /* Images.xcassets */,
-				AF4569501B1F950C00AD9E86 /* LaunchScreen.xib */,
+				AF45694B1B1F950C00AD9E86 /* Main.storyboard */,
 				AF4569451B1F950C00AD9E86 /* Supporting Files */,
 			);
 			path = Brewstribution;
@@ -144,6 +145,8 @@
 		AF4569451B1F950C00AD9E86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF45694E1B1F950C00AD9E86 /* Images.xcassets */,
+				AF4569501B1F950C00AD9E86 /* LaunchScreen.xib */,
 				AF4569461B1F950C00AD9E86 /* Info.plist */,
 				AF45698A1B1FECB700AD9E86 /* Keys.plist */,
 			);
@@ -291,7 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF45694A1B1F950C00AD9E86 /* BrewstributionViewController.swift in Sources */,
+				AF45694A1B1F950C00AD9E86 /* SelectStateViewController.swift in Sources */,
+				AFB95A541B20FAB700301798 /* SelectBreweryViewController.swift in Sources */,
 				AF4569481B1F950C00AD9E86 /* AppDelegate.swift in Sources */,
 				AF4569891B1FC6D600AD9E86 /* BreweriesViewController.swift in Sources */,
 			);
@@ -499,6 +503,7 @@
 				AF4569631B1F950C00AD9E86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF4569641B1F950C00AD9E86 /* Build configuration list for PBXNativeTarget "BrewstributionTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +512,7 @@
 				AF4569661B1F950C00AD9E86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

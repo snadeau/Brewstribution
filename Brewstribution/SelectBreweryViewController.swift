@@ -7,29 +7,49 @@
 //
 
 import UIKit
+import Parse
 
-class SelectBreweryViewController: UIViewController {
+class SelectBreweryViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var breweryPicker: UIPickerView!
+    
+    var breweries: [PFObject]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        breweryPicker.delegate = self
+        breweryPicker.dataSource = self
+        
+        let breweryQuery = PFQuery(className: "Brewery")
+        breweryQuery.limit = 1000
+        breweryQuery.orderByAscending("name")
+        breweryQuery.findObjectsInBackgroundWithBlock() { (objects, error) -> Void in
+            if error != nil {
+                println("error getting breweries \(error)")
+            }
+            else {
+                self.breweries = objects as! [PFObject]?
+                self.breweryPicker.reloadAllComponents()
+            }
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if breweries == nil {
+            println("states is nil")
+            return 0
+        } else {
+            return breweries!.count
+        }
     }
-    */
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return breweries![row]["name"] as! String
+    }
 
 }

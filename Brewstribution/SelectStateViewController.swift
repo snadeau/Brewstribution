@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class BrewstributionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SelectStateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var statePicker: UIPickerView!
     
@@ -25,7 +25,7 @@ class BrewstributionViewController: UIViewController, UIPickerViewDelegate, UIPi
         stateQuery.orderByAscending("name")
         stateQuery.findObjectsInBackgroundWithBlock() { (objects, error) -> Void in
             if error != nil {
-                println("error finding states \(error)")
+                println("error getting states \(error)")
             }
             else {
                 self.states = objects as! [PFObject]?
@@ -42,10 +42,7 @@ class BrewstributionViewController: UIViewController, UIPickerViewDelegate, UIPi
                 if states != nil {
                     let state = states![statePicker.selectedRowInComponent(0)]
                     dvc.state = state
-                    
-                    //self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
                 }
-                
             }
         }
     }

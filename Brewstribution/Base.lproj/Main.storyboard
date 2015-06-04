@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KsY-Sy-SQt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F9H-61-vcx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -8,7 +8,7 @@
         <!--Brewstribution-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BrewstributionViewController" customModule="Brewstribution" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SelectStateViewController" customModule="Brewstribution" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Breweries by State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-c5-gh8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breweries by State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-c5-gh8">
                                 <rect key="frame" x="16" y="72" width="568" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -27,9 +27,9 @@
                                 <rect key="frame" x="140" y="219" width="320" height="162"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9L-6k-5Wn">
-                                <rect key="frame" x="16" y="551" width="568" height="41"/>
+                                <rect key="frame" x="16" y="502" width="568" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="See Breweries">
+                                <state key="normal" title="View Breweries">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -72,7 +72,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="337"/>
+            <point key="canvasLocation" x="2004" y="337"/>
+        </scene>
+        <!--Select Brewery View Controller-->
+        <scene sceneID="fNe-nw-mY3">
+            <objects>
+                <viewController id="6gb-4g-1Io" customClass="SelectBreweryViewController" customModule="Brewstribution" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CJV-UO-2zX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ual-HQ-e4l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bfm-X0-vMl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="States by Brewery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="FPM-n9-0eh">
+                                <rect key="frame" x="16" y="72" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iw8-tf-sBV">
+                                <rect key="frame" x="16" y="510" width="568" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="View States">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-mW-SdJ">
+                                <rect key="frame" x="140" y="219" width="320" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FPM-n9-0eh" firstAttribute="leading" secondItem="Bfm-X0-vMl" secondAttribute="leadingMargin" id="9QJ-Ni-jmx"/>
+                            <constraint firstItem="ual-HQ-e4l" firstAttribute="top" secondItem="iw8-tf-sBV" secondAttribute="bottom" id="U6p-YD-UTE"/>
+                            <constraint firstAttribute="centerX" secondItem="Mfb-mW-SdJ" secondAttribute="centerX" id="W6f-Qh-32m"/>
+                            <constraint firstItem="iw8-tf-sBV" firstAttribute="trailing" secondItem="Bfm-X0-vMl" secondAttribute="trailingMargin" id="aLI-Ns-xm8"/>
+                            <constraint firstItem="iw8-tf-sBV" firstAttribute="leading" secondItem="Bfm-X0-vMl" secondAttribute="leadingMargin" id="cgh-yg-tHR"/>
+                            <constraint firstAttribute="centerY" secondItem="Mfb-mW-SdJ" secondAttribute="centerY" id="sdy-Lz-RZj"/>
+                            <constraint firstItem="FPM-n9-0eh" firstAttribute="trailing" secondItem="Bfm-X0-vMl" secondAttribute="trailingMargin" id="ufO-gE-4ah"/>
+                            <constraint firstItem="FPM-n9-0eh" firstAttribute="top" secondItem="CJV-UO-2zX" secondAttribute="bottom" constant="8" symbolic="YES" id="wTK-zo-f6G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PGN-if-kLR"/>
+                    <connections>
+                        <outlet property="breweryPicker" destination="Mfb-mW-SdJ" id="8cn-yg-79O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlR-P2-8Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005" y="1039"/>
         </scene>
         <!--Title-->
         <scene sceneID="CJh-f1-LKp">
@@ -129,12 +179,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KU4-RZ-W5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="337"/>
+            <point key="canvasLocation" x="2853" y="337"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="pMZ-pk-wkW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KsY-Sy-SQt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gho-xG-cfg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LLx-qf-Vou">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -147,7 +198,45 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeW-Oi-voM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1163" y="337"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NYW-SU-Mkq">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="F9H-61-vcx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bIn-O3-sRg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KsY-Sy-SQt" kind="relationship" relationship="viewControllers" id="bNl-HJ-K0J"/>
+                        <segue destination="oui-5e-Y4c" kind="relationship" relationship="viewControllers" id="M1u-NZ-rQ0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f87-1U-NzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="351" y="337"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="g8R-3o-Z2n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oui-5e-Y4c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fjf-jd-qu9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bon-W2-NCq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6gb-4g-1Io" kind="relationship" relationship="rootViewController" id="iPm-Y1-QJz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkC-l9-Vy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="1039"/>
         </scene>
     </scenes>
 </document>

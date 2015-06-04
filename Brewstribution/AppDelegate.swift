@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        Parse.enableLocalDatastore()
         
         let filePath = NSBundle.mainBundle().pathForResource("Keys", ofType:"plist")
         let plist = NSDictionary(contentsOfFile: filePath!)

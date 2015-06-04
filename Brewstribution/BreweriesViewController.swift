@@ -38,7 +38,7 @@ class BreweriesViewController: UIViewController, UITableViewDataSource, UITableV
                     self.breweries = [PFObject]()
                     for distribution in distributions {
                         let brewery = distribution["brewery"] as! PFObject
-                        self.breweries?.append(brewery)
+                        self.breweries!.append(brewery)
                     }
                     self.activityIndicator.stopAnimating()
                     self.breweriesTableView.reloadData()
