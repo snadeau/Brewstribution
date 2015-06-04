@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KsY-Sy-SQt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Brewstribution-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BrewstributionViewController" customModule="Brewstribution" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Breweries by State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-c5-gh8">
+                                <rect key="frame" x="16" y="72" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-rx-xI1">
+                                <rect key="frame" x="140" y="219" width="320" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9L-6k-5Wn">
+                                <rect key="frame" x="16" y="551" width="568" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="See Breweries">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="No5-4F-sM2" kind="show" identifier="showBreweries" id="g2s-OV-T4u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vd9-rx-xI1" secondAttribute="centerX" id="1eq-NU-AQm"/>
+                            <constraint firstItem="vd9-rx-xI1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="65i-XB-tlY"/>
+                            <constraint firstItem="WhG-c5-gh8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EVH-Vb-A61"/>
+                            <constraint firstItem="WhG-c5-gh8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="JTg-7f-0sb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s9L-6k-5Wn" secondAttribute="bottom" constant="8" symbolic="YES" id="RUu-co-be1"/>
+                            <constraint firstItem="vd9-rx-xI1" firstAttribute="centerX" secondItem="WhG-c5-gh8" secondAttribute="centerX" id="UJe-YD-jhW"/>
+                            <constraint firstItem="vd9-rx-xI1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zb5-vb-k4t"/>
+                            <constraint firstItem="s9L-6k-5Wn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="f5X-8M-oU8"/>
+                            <constraint firstItem="WhG-c5-gh8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gmL-oA-7nE"/>
+                            <constraint firstItem="s9L-6k-5Wn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lfa-mq-oex"/>
+                            <constraint firstItem="WhG-c5-gh8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sU6-jB-Yhi"/>
+                            <constraint firstItem="WhG-c5-gh8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="wrt-y8-l1H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WhG-c5-gh8" secondAttribute="bottom" constant="481" id="xa4-JU-WbW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JTg-7f-0sb"/>
+                                <exclude reference="gmL-oA-7nE"/>
+                                <exclude reference="UJe-YD-jhW"/>
+                                <exclude reference="Zb5-vb-k4t"/>
+                                <exclude reference="xa4-JU-WbW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brewstribution" id="GTy-82-WHx">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qq2-eB-G4P"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="statePicker" destination="vd9-rx-xI1" id="aye-gZ-ejy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="337"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="CJh-f1-LKp">
+            <objects>
+                <viewController id="No5-4F-sM2" customClass="BreweriesViewController" customModule="Brewstribution" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YIp-hL-jea"/>
+                        <viewControllerLayoutGuide type="bottom" id="WOn-fD-Ubg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ub-gv-Oyw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SsL-5s-JBy">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tkk-Gd-vTX">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="breweryCell" id="KVk-f2-6f8">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KVk-f2-6f8" id="bOV-b6-ao3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tkk-Gd-vTX" firstAttribute="bottom" secondItem="WOn-fD-Ubg" secondAttribute="top" id="5AE-2z-ONO"/>
+                            <constraint firstItem="Tkk-Gd-vTX" firstAttribute="centerX" secondItem="SsL-5s-JBy" secondAttribute="centerX" id="H4x-1K-3tk"/>
+                            <constraint firstItem="Tkk-Gd-vTX" firstAttribute="leading" secondItem="5ub-gv-Oyw" secondAttribute="leading" id="OKJ-5J-4R1"/>
+                            <constraint firstItem="SsL-5s-JBy" firstAttribute="centerX" secondItem="Tkk-Gd-vTX" secondAttribute="centerX" id="Y9q-0e-9PM"/>
+                            <constraint firstAttribute="trailing" secondItem="Tkk-Gd-vTX" secondAttribute="trailing" id="ZS6-tE-Puf"/>
+                            <constraint firstItem="Tkk-Gd-vTX" firstAttribute="top" secondItem="YIp-hL-jea" secondAttribute="bottom" id="cKv-MF-UsB"/>
+                            <constraint firstAttribute="centerX" secondItem="SsL-5s-JBy" secondAttribute="centerX" id="ls1-C4-3wl"/>
+                            <constraint firstItem="SsL-5s-JBy" firstAttribute="centerY" secondItem="5ub-gv-Oyw" secondAttribute="centerY" id="ptu-Q0-aQd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H4x-1K-3tk"/>
+                                <exclude reference="Y9q-0e-9PM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Grz-vO-n1I"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="SsL-5s-JBy" id="DwE-KP-SF8"/>
+                        <outlet property="breweriesTableView" destination="Tkk-Gd-vTX" id="UIC-eW-5C6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KU4-RZ-W5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pMZ-pk-wkW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KsY-Sy-SQt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LLx-qf-Vou">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="74x-Eu-y8F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WeW-Oi-voM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="337"/>
+        </scene>
+    </scenes>
+</document>
