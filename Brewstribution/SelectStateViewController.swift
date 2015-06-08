@@ -53,7 +53,6 @@ class SelectStateViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if states == nil {
-            println("states is nil")
             return 0
         } else {
             return states!.count

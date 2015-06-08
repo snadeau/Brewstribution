@@ -34,6 +34,17 @@ class SelectBreweryViewController: UIViewController, UIPickerViewDelegate, UIPic
             }
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            if identifier == "showStates" {
+                let dvc = segue.destinationViewController as! StatesViewController
+                if breweries != nil {
+                    dvc.brewery = breweries![breweryPicker.selectedRowInComponent(0)]
+                }
+            }
+        }
+    }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -41,7 +52,6 @@ class SelectBreweryViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if breweries == nil {
-            println("states is nil")
             return 0
         } else {
             return breweries!.count
