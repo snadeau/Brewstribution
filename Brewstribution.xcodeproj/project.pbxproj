@@ -32,6 +32,9 @@
 		AF4569891B1FC6D600AD9E86 /* BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */; };
 		AF45698B1B1FECB700AD9E86 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF45698A1B1FECB700AD9E86 /* Keys.plist */; };
 		AF9AB7BD1B26045A00E268E9 /* StatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7BC1B26045A00E268E9 /* StatesViewController.swift */; };
+		AF9AB7BF1B262A9E00E268E9 /* SelectTwoStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7BE1B262A9E00E268E9 /* SelectTwoStatesViewController.swift */; };
+		AF9AB7C31B26813400E268E9 /* State1BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7C21B26813400E268E9 /* State1BreweriesViewController.swift */; };
+		AF9AB7C51B26815A00E268E9 /* State2BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7C41B26815A00E268E9 /* State2BreweriesViewController.swift */; };
 		AFB95A541B20FAB700301798 /* SelectBreweryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweriesViewController.swift; sourceTree = "<group>"; };
 		AF45698A1B1FECB700AD9E86 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		AF9AB7BC1B26045A00E268E9 /* StatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesViewController.swift; sourceTree = "<group>"; };
+		AF9AB7BE1B262A9E00E268E9 /* SelectTwoStatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTwoStatesViewController.swift; sourceTree = "<group>"; };
+		AF9AB7C21B26813400E268E9 /* State1BreweriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State1BreweriesViewController.swift; sourceTree = "<group>"; };
+		AF9AB7C41B26815A00E268E9 /* State2BreweriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State2BreweriesViewController.swift; sourceTree = "<group>"; };
 		AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBreweryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +145,9 @@
 				AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */,
 				AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */,
 				AF45694B1B1F950C00AD9E86 /* Main.storyboard */,
+				AF9AB7C21B26813400E268E9 /* State1BreweriesViewController.swift */,
+				AF9AB7C41B26815A00E268E9 /* State2BreweriesViewController.swift */,
+				AF9AB7BE1B262A9E00E268E9 /* SelectTwoStatesViewController.swift */,
 				AF9AB7BC1B26045A00E268E9 /* StatesViewController.swift */,
 				AF4569451B1F950C00AD9E86 /* Supporting Files */,
 			);
@@ -298,10 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9AB7BD1B26045A00E268E9 /* StatesViewController.swift in Sources */,
+				AF9AB7BF1B262A9E00E268E9 /* SelectTwoStatesViewController.swift in Sources */,
 				AF45694A1B1F950C00AD9E86 /* SelectStateViewController.swift in Sources */,
 				AFB95A541B20FAB700301798 /* SelectBreweryViewController.swift in Sources */,
 				AF4569481B1F950C00AD9E86 /* AppDelegate.swift in Sources */,
+				AF9AB7C51B26815A00E268E9 /* State2BreweriesViewController.swift in Sources */,
 				AF4569891B1FC6D600AD9E86 /* BreweriesViewController.swift in Sources */,
+				AF9AB7C31B26813400E268E9 /* State1BreweriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
