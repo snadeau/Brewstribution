@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D19C5DAF715811E5D1BF72A /* libPods-Brewstribution.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD94815C929CE33EF50FD1 /* libPods-Brewstribution.a */; };
 		AF4569481B1F950C00AD9E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569471B1F950C00AD9E86 /* AppDelegate.swift */; };
 		AF45694A1B1F950C00AD9E86 /* SelectStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4569491B1F950C00AD9E86 /* SelectStateViewController.swift */; };
 		AF45694D1B1F950C00AD9E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF45694B1B1F950C00AD9E86 /* Main.storyboard */; };
@@ -33,9 +34,10 @@
 		AF45698B1B1FECB700AD9E86 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF45698A1B1FECB700AD9E86 /* Keys.plist */; };
 		AF9AB7BD1B26045A00E268E9 /* StatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7BC1B26045A00E268E9 /* StatesViewController.swift */; };
 		AF9AB7BF1B262A9E00E268E9 /* SelectTwoStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7BE1B262A9E00E268E9 /* SelectTwoStatesViewController.swift */; };
-		AF9AB7C31B26813400E268E9 /* State1BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7C21B26813400E268E9 /* State1BreweriesViewController.swift */; };
-		AF9AB7C51B26815A00E268E9 /* State2BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AB7C41B26815A00E268E9 /* State2BreweriesViewController.swift */; };
 		AFB95A541B20FAB700301798 /* SelectBreweryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */; };
+		AFCF4D0F1B5DE8D200933AAA /* BSBrewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4D0E1B5DE8D200933AAA /* BSBrewery.swift */; };
+		AFCF4D121B5DEAA300933AAA /* BSDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4D111B5DEAA300933AAA /* BSDistribution.swift */; };
+		AFCF4D141B5DEB7E00933AAA /* BSState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4D131B5DEB7E00933AAA /* BSState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AAEEB25A94A8B442E50256A /* Pods-Brewstribution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewstribution.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brewstribution/Pods-Brewstribution.release.xcconfig"; sourceTree = "<group>"; };
 		AF4569421B1F950C00AD9E86 /* Brewstribution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewstribution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4569461B1F950C00AD9E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4569471B1F950C00AD9E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,9 +82,13 @@
 		AF45698A1B1FECB700AD9E86 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		AF9AB7BC1B26045A00E268E9 /* StatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesViewController.swift; sourceTree = "<group>"; };
 		AF9AB7BE1B262A9E00E268E9 /* SelectTwoStatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTwoStatesViewController.swift; sourceTree = "<group>"; };
-		AF9AB7C21B26813400E268E9 /* State1BreweriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State1BreweriesViewController.swift; sourceTree = "<group>"; };
-		AF9AB7C41B26815A00E268E9 /* State2BreweriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State2BreweriesViewController.swift; sourceTree = "<group>"; };
+		AFB617991B32738B00CC7207 /* Brewstribution-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brewstribution-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBreweryViewController.swift; sourceTree = "<group>"; };
+		AFCF4D0E1B5DE8D200933AAA /* BSBrewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSBrewery.swift; sourceTree = "<group>"; };
+		AFCF4D111B5DEAA300933AAA /* BSDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSDistribution.swift; sourceTree = "<group>"; };
+		AFCF4D131B5DEB7E00933AAA /* BSState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSState.swift; sourceTree = "<group>"; };
+		BBDD94815C929CE33EF50FD1 /* libPods-Brewstribution.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brewstribution.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6A591A8D451D62CAD66540 /* Pods-Brewstribution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewstribution.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brewstribution/Pods-Brewstribution.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,7 @@
 				AF45696D1B1F977A00AD9E86 /* ParseUI.framework in Frameworks */,
 				AF4569681B1F974B00AD9E86 /* Parse.framework in Frameworks */,
 				AF45696B1B1F976B00AD9E86 /* Bolts.framework in Frameworks */,
+				7D19C5DAF715811E5D1BF72A /* libPods-Brewstribution.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		920EC37A58E96FA04F4AD1F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE6A591A8D451D62CAD66540 /* Pods-Brewstribution.debug.xcconfig */,
+				8AAEEB25A94A8B442E50256A /* Pods-Brewstribution.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF4569391B1F950C00AD9E86 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +142,7 @@
 				AF4569691B1F975100AD9E86 /* Frameworks */,
 				AF45695A1B1F950C00AD9E86 /* BrewstributionTests */,
 				AF4569431B1F950C00AD9E86 /* Products */,
+				920EC37A58E96FA04F4AD1F0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,13 +158,13 @@
 		AF4569441B1F950C00AD9E86 /* Brewstribution */ = {
 			isa = PBXGroup;
 			children = (
+				AFCF4D101B5DEA3200933AAA /* Models */,
+				AFB617991B32738B00CC7207 /* Brewstribution-Bridging-Header.h */,
 				AF4569471B1F950C00AD9E86 /* AppDelegate.swift */,
 				AF4569491B1F950C00AD9E86 /* SelectStateViewController.swift */,
 				AFB95A531B20FAB700301798 /* SelectBreweryViewController.swift */,
 				AF4569881B1FC6D600AD9E86 /* BreweriesViewController.swift */,
 				AF45694B1B1F950C00AD9E86 /* Main.storyboard */,
-				AF9AB7C21B26813400E268E9 /* State1BreweriesViewController.swift */,
-				AF9AB7C41B26815A00E268E9 /* State2BreweriesViewController.swift */,
 				AF9AB7BE1B262A9E00E268E9 /* SelectTwoStatesViewController.swift */,
 				AF9AB7BC1B26045A00E268E9 /* StatesViewController.swift */,
 				AF4569451B1F950C00AD9E86 /* Supporting Files */,
@@ -201,8 +219,19 @@
 				AF45696C1B1F977A00AD9E86 /* ParseUI.framework */,
 				AF45696A1B1F976B00AD9E86 /* Bolts.framework */,
 				AF4569671B1F974B00AD9E86 /* Parse.framework */,
+				BBDD94815C929CE33EF50FD1 /* libPods-Brewstribution.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFCF4D101B5DEA3200933AAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF4D0E1B5DE8D200933AAA /* BSBrewery.swift */,
+				AFCF4D111B5DEAA300933AAA /* BSDistribution.swift */,
+				AFCF4D131B5DEB7E00933AAA /* BSState.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4569611B1F950C00AD9E86 /* Build configuration list for PBXNativeTarget "Brewstribution" */;
 			buildPhases = (
+				791DCAF343100B55A369C503 /* Check Pods Manifest.lock */,
 				AF45693E1B1F950C00AD9E86 /* Sources */,
 				AF45693F1B1F950C00AD9E86 /* Frameworks */,
 				AF4569401B1F950C00AD9E86 /* Resources */,
+				2E30BBB1DB337B9DC31BA1F6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +332,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E30BBB1DB337B9DC31BA1F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brewstribution/Pods-Brewstribution-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		791DCAF343100B55A369C503 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF45693E1B1F950C00AD9E86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,11 +373,12 @@
 				AF9AB7BD1B26045A00E268E9 /* StatesViewController.swift in Sources */,
 				AF9AB7BF1B262A9E00E268E9 /* SelectTwoStatesViewController.swift in Sources */,
 				AF45694A1B1F950C00AD9E86 /* SelectStateViewController.swift in Sources */,
+				AFCF4D141B5DEB7E00933AAA /* BSState.swift in Sources */,
+				AFCF4D0F1B5DE8D200933AAA /* BSBrewery.swift in Sources */,
 				AFB95A541B20FAB700301798 /* SelectBreweryViewController.swift in Sources */,
+				AFCF4D121B5DEAA300933AAA /* BSDistribution.swift in Sources */,
 				AF4569481B1F950C00AD9E86 /* AppDelegate.swift in Sources */,
-				AF9AB7C51B26815A00E268E9 /* State2BreweriesViewController.swift in Sources */,
 				AF4569891B1FC6D600AD9E86 /* BreweriesViewController.swift in Sources */,
-				AF9AB7C31B26813400E268E9 /* State1BreweriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +460,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,6 +499,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -440,6 +507,7 @@
 		};
 		AF4569621B1F950C00AD9E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6A591A8D451D62CAD66540 /* Pods-Brewstribution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -449,11 +517,13 @@
 				INFOPLIST_FILE = Brewstribution/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Brewstribution/Brewstribution-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		AF4569631B1F950C00AD9E86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAEEB25A94A8B442E50256A /* Pods-Brewstribution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -463,6 +533,7 @@
 				INFOPLIST_FILE = Brewstribution/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Brewstribution/Brewstribution-Bridging-Header.h";
 			};
 			name = Release;
 		};

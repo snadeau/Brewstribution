@@ -9,18 +9,21 @@
 import UIKit
 import Parse
 
-class SelectBreweryViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
+class SelectBreweryViewController: UIViewController, MLPAutoCompleteTextFieldDataSource, MLPAutoCompleteTextFieldDelegate {
 
     @IBOutlet weak var breweryPicker: UIPickerView!
+    @IBOutlet weak var autoCompleteBreweryPicker: MLPAutoCompleteTextField!
     
     var breweries: [PFObject]?
     
+    var selectedBrewery: String?
+    
+    var breweryNames = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        breweryPicker.delegate = self
-        breweryPicker.dataSource = self
-        
+  
         let breweryQuery = PFQuery(className: "Brewery")
         breweryQuery.limit = 1000
         breweryQuery.orderByAscending("name")
@@ -30,9 +33,16 @@ class SelectBreweryViewController: UIViewController, UIPickerViewDelegate, UIPic
             }
             else {
                 self.breweries = objects as! [PFObject]?
-                self.breweryPicker.reloadAllComponents()
+                for brewery in self.breweries! {
+                    self.breweryNames.append(brewery["name"] as! String)
+                }
             }
         }
+        
+        
+        autoCompleteBreweryPicker.autoCompleteDataSource = self
+        autoCompleteBreweryPicker.autoCompleteDelegate = self
+        autoCompleteBreweryPicker.maximumNumberOfAutoCompleteRows = 5
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -40,26 +50,22 @@ class SelectBreweryViewController: UIViewController, UIPickerViewDelegate, UIPic
             if identifier == "showStates" {
                 let dvc = segue.destinationViewController as! StatesViewController
                 if breweries != nil {
-                    dvc.brewery = breweries![breweryPicker.selectedRowInComponent(0)]
+                    for brewery in breweries! {
+                        if brewery["name"] as! String == selectedBrewery! {
+                            dvc.brewery = brewery
+                        }
+                    }
                 }
             }
         }
     }
+    
+    func autoCompleteTextField(textField: MLPAutoCompleteTextField!, possibleCompletionsForString string: String!) -> [AnyObject]! {
+        return breweryNames
+    }
 
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if breweries == nil {
-            return 0
-        } else {
-            return breweries!.count
-        }
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        return breweries![row]["name"] as! String
+    func autoCompleteTextField(textField: MLPAutoCompleteTextField!, didSelectAutoCompleteString selectedString: String!, withAutoCompleteObject selectedObject: MLPAutoCompletionObject!, forRowAtIndexPath indexPath: NSIndexPath!) {
+        selectedBrewery = selectedString
     }
 
 }

@@ -14,10 +14,18 @@ import Bolts
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func registerParseSubclasses() -> Void {
+        BSBrewery.registerSubclass()
+        BSDistribution.registerSubclass()
+        BSState.registerSubclass()
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.enableLocalDatastore()
+        
+        self.registerParseSubclasses()
         
         let filePath = NSBundle.mainBundle().pathForResource("Keys", ofType:"plist")
         let plist = NSDictionary(contentsOfFile: filePath!)

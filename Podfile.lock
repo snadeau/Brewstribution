@@ -1,0 +1,22 @@
+PODS:
+  - ActionSheetPicker-3.0 (1.6.2)
+  - MLPAutoCompleteTextField (1.6)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - MLPAutoCompleteTextField (from `https://github.com/EddyBorja/MLPAutoCompleteTextField.git`)
+
+EXTERNAL SOURCES:
+  MLPAutoCompleteTextField:
+    :git: https://github.com/EddyBorja/MLPAutoCompleteTextField.git
+
+CHECKOUT OPTIONS:
+  MLPAutoCompleteTextField:
+    :commit: 75acae6fdec283c6e4b33e15d2a17bf2bb9a2380
+    :git: https://github.com/EddyBorja/MLPAutoCompleteTextField.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: cc9f90ae785070623e9b972270013c3242190fb0
+  MLPAutoCompleteTextField: 02700789c32dce9b3a7e9991810adf5edb757d80
+
+COCOAPODS: 0.37.2

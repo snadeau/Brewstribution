@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A7DE8708471A386A84BF480 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EEB2087B6860BFDB35CD81 /* ActionSheetDistancePicker.h */; };
+		0AFC6FAB4FBC18ED6D94C12F /* Pods-Brewstribution-ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0516AFBC65387A9FAD659426 /* Pods-Brewstribution-ActionSheetPicker-3.0-dummy.m */; };
+		0B467490D586E1076CC0A015 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B1547911AF946B6D23D6B88B /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0D1D76BE7C660B52F9C622F6 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F5344427419F7744CD456F30 /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1DB7CB4A56A75124909B01F1 /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = CA68313F1756588DD912A237 /* ActionSheetDatePicker.h */; };
+		20D06A7F52680520E1DE04D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414E10756C37DBB050FE3F49 /* Foundation.framework */; };
+		27F9A96640642A70E2FC3BFD /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 804748D37AC74AAB70FDBBBC /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2AD4E01A551F05A998F1CD7B /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F614DDBF4E495312AC8D2EBA /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2F9D681DB67F28F62784CBC7 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF5FB187191C23A4AA9AABE /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		428D15495A2DD1000419060A /* MLPAutoCompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E524C198069041D223832CD8 /* MLPAutoCompleteTextField.h */; };
+		46987CFE950A39DB7B7CA1A2 /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E58A2B6211B2028D8B1E176B /* ActionSheetCustomPicker.h */; };
+		491398F4485F14019B32F563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414E10756C37DBB050FE3F49 /* Foundation.framework */; };
+		4AC190FC2E03C842B4CD6B0F /* MLPAutoCompleteTextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 794A19FFE36D80B66A4961BC /* MLPAutoCompleteTextFieldDelegate.h */; };
+		66DD59848CB8BA7198A7C014 /* NSString+Levenshtein.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB9D5BC1BF6ADC1C650BC88 /* NSString+Levenshtein.h */; };
+		677A20A3647B56B9AA3FA886 /* MLPAutoCompleteTextFieldDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCA73196CA820387C41055B /* MLPAutoCompleteTextFieldDataSource.h */; };
+		6B52FF0A464A15C81B670132 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC3F0C07697686ACE696B3 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		70282CA441A2D3D8C51A8DA8 /* MLPAutoCompletionObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E46E091B6287D24BEF70C74F /* MLPAutoCompletionObject.h */; };
+		72B54BB1C0A275E22DB4FF06 /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 402363C288B6BACBDFD80380 /* ActionSheetStringPicker.h */; };
+		74DABA0F30C23FDE362D2A77 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1FBB5F6E329BC2BA2F4E9 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7AF717065CE9D780A2E18674 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = B96259B444FDA20204B87154 /* NSString+Levenshtein.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		84FF6835DABD866435FAD679 /* Pods-Brewstribution-MLPAutoCompleteTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F35D68B0AC8CB1A5CDFBC213 /* Pods-Brewstribution-MLPAutoCompleteTextField-dummy.m */; };
+		9624FED6C75158F0C3644D07 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = DF55572DF1E92890662498DF /* AbstractActionSheetPicker.h */; };
+		9C3C3D39C454D11DE992F61C /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3ACF9E726933CB4EA1828F3 /* DistancePickerView.h */; };
+		9E51C1151F51654BE672E808 /* ActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E5AEBC380465827DC866CB /* ActionSheetPicker.h */; };
+		A9F9F52B7F9DAC793CFC6A7E /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BDF1F776FD9C4EDC1312ED /* ActionSheetLocalePicker.h */; };
+		AAE72455276ABB1B09554A75 /* MLPAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FE29110B07E33FEA2E4CEE /* MLPAutoCompleteTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC7A6CA0D919BA8607D549BA /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 638E5CA144A4003F048352FF /* ActionSheetCustomPickerDelegate.h */; };
+		B2680319716DA158F8BD63C7 /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7070F22BC5A1DF32138B27 /* SWActionSheet.h */; };
+		C698FA8DB7F90573F208697C /* Pods-Brewstribution-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 940D097C0E15911B00B87EC9 /* Pods-Brewstribution-dummy.m */; };
+		DA1D187AFE39A27EC5605009 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2505B285CF92DB6E6AD67981 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E6ABBE4C26F0098D82D072F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414E10756C37DBB050FE3F49 /* Foundation.framework */; };
+		EA454A6EB92218D12A1C66BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB4EF571197F335B92FEE6 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D4B8F2857953AFA88C2C791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E074998E3FEDCA7D98764E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 538B8A69841BA2B803291D05;
+			remoteInfo = "Pods-Brewstribution-ActionSheetPicker-3.0";
+		};
+		D549235E43BC6F6EFA3A1C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E074998E3FEDCA7D98764E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FF9D7D7259FC9F24F5A1706;
+			remoteInfo = "Pods-Brewstribution-MLPAutoCompleteTextField";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0516AFBC65387A9FAD659426 /* Pods-Brewstribution-ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brewstribution-ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
+		1E14E7BD525957840B1D4812 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F46564438A1DE96D214DF04 /* Pods-Brewstribution-ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewstribution-ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
+		2505B285CF92DB6E6AD67981 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		2A3DDA99F1BE935A11B15DC6 /* Pods-Brewstribution-MLPAutoCompleteTextField-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewstribution-MLPAutoCompleteTextField-Private.xcconfig"; sourceTree = "<group>"; };
+		2CA1FBB5F6E329BC2BA2F4E9 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		2CE6B923266BCDFC75EA22BC /* libPods-Brewstribution-MLPAutoCompleteTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brewstribution-MLPAutoCompleteTextField.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DC1420CC2079EF0EB48356 /* Pods-Brewstribution-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brewstribution-resources.sh"; sourceTree = "<group>"; };
+		36D999A4E678FDE6B8C6FB52 /* libPods-Brewstribution.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brewstribution.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCA73196CA820387C41055B /* MLPAutoCompleteTextFieldDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLPAutoCompleteTextFieldDataSource.h; path = MLPAutoCompleteTextField/MLPAutoCompleteTextFieldDataSource.h; sourceTree = "<group>"; };
+		402363C288B6BACBDFD80380 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		40FA58A12A031807F98B2295 /* Pods-Brewstribution-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brewstribution-environment.h"; sourceTree = "<group>"; };
+		414E10756C37DBB050FE3F49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41F02365815412ACEF102D63 /* Pods-Brewstribution-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Brewstribution-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B9DF659FBEBEB54B31940B1 /* Pods-Brewstribution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewstribution.release.xcconfig"; sourceTree = "<group>"; };
+		50BDF1F776FD9C4EDC1312ED /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		638E5CA144A4003F048352FF /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		7413FAEDCEF11766FC843758 /* libPods-Brewstribution-ActionSheetPicker-3.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brewstribution-ActionSheetPicker-3.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7467C4EAF9580803CEA8118A /* Pods-Brewstribution-ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brewstribution-ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
+		76FE29110B07E33FEA2E4CEE /* MLPAutoCompleteTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLPAutoCompleteTextField.m; path = MLPAutoCompleteTextField/MLPAutoCompleteTextField.m; sourceTree = "<group>"; };
+		794A19FFE36D80B66A4961BC /* MLPAutoCompleteTextFieldDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLPAutoCompleteTextFieldDelegate.h; path = MLPAutoCompleteTextField/MLPAutoCompleteTextFieldDelegate.h; sourceTree = "<group>"; };
+		79EC3F0C07697686ACE696B3 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		804748D37AC74AAB70FDBBBC /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		81EEB2087B6860BFDB35CD81 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		8621942F32E0DCE75F7AE9D8 /* Pods-Brewstribution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewstribution.debug.xcconfig"; sourceTree = "<group>"; };
+		940D097C0E15911B00B87EC9 /* Pods-Brewstribution-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brewstribution-dummy.m"; sourceTree = "<group>"; };
+		A7E5AEBC380465827DC866CB /* ActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
+		B1547911AF946B6D23D6B88B /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		B33C1586A978FA2D2DC2CE2E /* Pods-Brewstribution-ActionSheetPicker-3.0-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewstribution-ActionSheetPicker-3.0-Private.xcconfig"; sourceTree = "<group>"; };
+		B3ACF9E726933CB4EA1828F3 /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		B4C86A308DD0D4A4A6C02CE9 /* Pods-Brewstribution-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Brewstribution-acknowledgements.plist"; sourceTree = "<group>"; };
+		B96259B444FDA20204B87154 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Levenshtein.m"; path = "MLPAutoCompleteTextField/NSString+Levenshtein.m"; sourceTree = "<group>"; };
+		B9BFC00AFE87C87D024716A7 /* Pods-Brewstribution-MLPAutoCompleteTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewstribution-MLPAutoCompleteTextField.xcconfig"; sourceTree = "<group>"; };
+		BEF5FB187191C23A4AA9AABE /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		C139B3760B500515FC16763B /* Pods-Brewstribution-MLPAutoCompleteTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brewstribution-MLPAutoCompleteTextField-prefix.pch"; sourceTree = "<group>"; };
+		CA68313F1756588DD912A237 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		D6EB4EF571197F335B92FEE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF55572DF1E92890662498DF /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		E46E091B6287D24BEF70C74F /* MLPAutoCompletionObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLPAutoCompletionObject.h; path = MLPAutoCompleteTextField/MLPAutoCompletionObject.h; sourceTree = "<group>"; };
+		E524C198069041D223832CD8 /* MLPAutoCompleteTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLPAutoCompleteTextField.h; path = MLPAutoCompleteTextField/MLPAutoCompleteTextField.h; sourceTree = "<group>"; };
+		E58A2B6211B2028D8B1E176B /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		ECB9D5BC1BF6ADC1C650BC88 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Levenshtein.h"; path = "MLPAutoCompleteTextField/NSString+Levenshtein.h"; sourceTree = "<group>"; };
+		F35D68B0AC8CB1A5CDFBC213 /* Pods-Brewstribution-MLPAutoCompleteTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brewstribution-MLPAutoCompleteTextField-dummy.m"; sourceTree = "<group>"; };
+		F5344427419F7744CD456F30 /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		F614DDBF4E495312AC8D2EBA /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
+		FA7070F22BC5A1DF32138B27 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4819ED84AAD000524C6806C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6ABBE4C26F0098D82D072F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47643B2083C57E3796E85D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491398F4485F14019B32F563 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD330DEA64539D7A4961AF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D06A7F52680520E1DE04D1 /* Foundation.framework in Frameworks */,
+				EA454A6EB92218D12A1C66BC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1798CFE985F7D054287B96AF = {
+			isa = PBXGroup;
+			children = (
+				1E14E7BD525957840B1D4812 /* Podfile */,
+				57052B0D1DD81AC2F2325609 /* Frameworks */,
+				CBAFC8086D432ED4E754744C /* Pods */,
+				6EF387EC5849D755D628A66B /* Products */,
+				64D3203A895425991179CCB9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		57052B0D1DD81AC2F2325609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B33CC79B8C6C6342474BAAE7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C996617A2EC20D6596DEEB7 /* MLPAutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E524C198069041D223832CD8 /* MLPAutoCompleteTextField.h */,
+				76FE29110B07E33FEA2E4CEE /* MLPAutoCompleteTextField.m */,
+				3DCA73196CA820387C41055B /* MLPAutoCompleteTextFieldDataSource.h */,
+				794A19FFE36D80B66A4961BC /* MLPAutoCompleteTextFieldDelegate.h */,
+				E46E091B6287D24BEF70C74F /* MLPAutoCompletionObject.h */,
+				ECB9D5BC1BF6ADC1C650BC88 /* NSString+Levenshtein.h */,
+				B96259B444FDA20204B87154 /* NSString+Levenshtein.m */,
+				A30C29314AF5B7E1EA0381E8 /* Support Files */,
+			);
+			path = MLPAutoCompleteTextField;
+			sourceTree = "<group>";
+		};
+		64D3203A895425991179CCB9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8F81F9DBEAA0278AC8E2CDB /* Pods-Brewstribution */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6EF387EC5849D755D628A66B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36D999A4E678FDE6B8C6FB52 /* libPods-Brewstribution.a */,
+				7413FAEDCEF11766FC843758 /* libPods-Brewstribution-ActionSheetPicker-3.0.a */,
+				2CE6B923266BCDFC75EA22BC /* libPods-Brewstribution-MLPAutoCompleteTextField.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30C29314AF5B7E1EA0381E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9BFC00AFE87C87D024716A7 /* Pods-Brewstribution-MLPAutoCompleteTextField.xcconfig */,
+				2A3DDA99F1BE935A11B15DC6 /* Pods-Brewstribution-MLPAutoCompleteTextField-Private.xcconfig */,
+				F35D68B0AC8CB1A5CDFBC213 /* Pods-Brewstribution-MLPAutoCompleteTextField-dummy.m */,
+				C139B3760B500515FC16763B /* Pods-Brewstribution-MLPAutoCompleteTextField-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Brewstribution-MLPAutoCompleteTextField";
+			sourceTree = "<group>";
+		};
+		B33CC79B8C6C6342474BAAE7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				414E10756C37DBB050FE3F49 /* Foundation.framework */,
+				D6EB4EF571197F335B92FEE6 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BC6D09DAF206C1C26F5C64FF /* ActionSheetPicker-3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				DF55572DF1E92890662498DF /* AbstractActionSheetPicker.h */,
+				2CA1FBB5F6E329BC2BA2F4E9 /* AbstractActionSheetPicker.m */,
+				E58A2B6211B2028D8B1E176B /* ActionSheetCustomPicker.h */,
+				B1547911AF946B6D23D6B88B /* ActionSheetCustomPicker.m */,
+				638E5CA144A4003F048352FF /* ActionSheetCustomPickerDelegate.h */,
+				CA68313F1756588DD912A237 /* ActionSheetDatePicker.h */,
+				2505B285CF92DB6E6AD67981 /* ActionSheetDatePicker.m */,
+				81EEB2087B6860BFDB35CD81 /* ActionSheetDistancePicker.h */,
+				79EC3F0C07697686ACE696B3 /* ActionSheetDistancePicker.m */,
+				50BDF1F776FD9C4EDC1312ED /* ActionSheetLocalePicker.h */,
+				804748D37AC74AAB70FDBBBC /* ActionSheetLocalePicker.m */,
+				A7E5AEBC380465827DC866CB /* ActionSheetPicker.h */,
+				402363C288B6BACBDFD80380 /* ActionSheetStringPicker.h */,
+				BEF5FB187191C23A4AA9AABE /* ActionSheetStringPicker.m */,
+				B3ACF9E726933CB4EA1828F3 /* DistancePickerView.h */,
+				F614DDBF4E495312AC8D2EBA /* DistancePickerView.m */,
+				FA7070F22BC5A1DF32138B27 /* SWActionSheet.h */,
+				F5344427419F7744CD456F30 /* SWActionSheet.m */,
+				FAE9373ACFCD7A8F55A0F607 /* Support Files */,
+			);
+			path = "ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		CBAFC8086D432ED4E754744C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC6D09DAF206C1C26F5C64FF /* ActionSheetPicker-3.0 */,
+				5C996617A2EC20D6596DEEB7 /* MLPAutoCompleteTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8F81F9DBEAA0278AC8E2CDB /* Pods-Brewstribution */ = {
+			isa = PBXGroup;
+			children = (
+				41F02365815412ACEF102D63 /* Pods-Brewstribution-acknowledgements.markdown */,
+				B4C86A308DD0D4A4A6C02CE9 /* Pods-Brewstribution-acknowledgements.plist */,
+				940D097C0E15911B00B87EC9 /* Pods-Brewstribution-dummy.m */,
+				40FA58A12A031807F98B2295 /* Pods-Brewstribution-environment.h */,
+				34DC1420CC2079EF0EB48356 /* Pods-Brewstribution-resources.sh */,
+				8621942F32E0DCE75F7AE9D8 /* Pods-Brewstribution.debug.xcconfig */,
+				4B9DF659FBEBEB54B31940B1 /* Pods-Brewstribution.release.xcconfig */,
+			);
+			name = "Pods-Brewstribution";
+			path = "Target Support Files/Pods-Brewstribution";
+			sourceTree = "<group>";
+		};
+		FAE9373ACFCD7A8F55A0F607 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F46564438A1DE96D214DF04 /* Pods-Brewstribution-ActionSheetPicker-3.0.xcconfig */,
+				B33C1586A978FA2D2DC2CE2E /* Pods-Brewstribution-ActionSheetPicker-3.0-Private.xcconfig */,
+				0516AFBC65387A9FAD659426 /* Pods-Brewstribution-ActionSheetPicker-3.0-dummy.m */,
+				7467C4EAF9580803CEA8118A /* Pods-Brewstribution-ActionSheetPicker-3.0-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Brewstribution-ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FFB8BF1B73F9D61B2F3A9BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9624FED6C75158F0C3644D07 /* AbstractActionSheetPicker.h in Headers */,
+				46987CFE950A39DB7B7CA1A2 /* ActionSheetCustomPicker.h in Headers */,
+				AC7A6CA0D919BA8607D549BA /* ActionSheetCustomPickerDelegate.h in Headers */,
+				1DB7CB4A56A75124909B01F1 /* ActionSheetDatePicker.h in Headers */,
+				0A7DE8708471A386A84BF480 /* ActionSheetDistancePicker.h in Headers */,
+				A9F9F52B7F9DAC793CFC6A7E /* ActionSheetLocalePicker.h in Headers */,
+				9E51C1151F51654BE672E808 /* ActionSheetPicker.h in Headers */,
+				72B54BB1C0A275E22DB4FF06 /* ActionSheetStringPicker.h in Headers */,
+				9C3C3D39C454D11DE992F61C /* DistancePickerView.h in Headers */,
+				B2680319716DA158F8BD63C7 /* SWActionSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9905DB02DB0889905F95E041 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428D15495A2DD1000419060A /* MLPAutoCompleteTextField.h in Headers */,
+				677A20A3647B56B9AA3FA886 /* MLPAutoCompleteTextFieldDataSource.h in Headers */,
+				4AC190FC2E03C842B4CD6B0F /* MLPAutoCompleteTextFieldDelegate.h in Headers */,
+				70282CA441A2D3D8C51A8DA8 /* MLPAutoCompletionObject.h in Headers */,
+				66DD59848CB8BA7198A7C014 /* NSString+Levenshtein.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2FF9D7D7259FC9F24F5A1706 /* Pods-Brewstribution-MLPAutoCompleteTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8CC8605ACED108A60D83906 /* Build configuration list for PBXNativeTarget "Pods-Brewstribution-MLPAutoCompleteTextField" */;
+			buildPhases = (
+				2E3F93926824CE7CD19D095B /* Sources */,
+				4819ED84AAD000524C6806C8 /* Frameworks */,
+				9905DB02DB0889905F95E041 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Brewstribution-MLPAutoCompleteTextField";
+			productName = "Pods-Brewstribution-MLPAutoCompleteTextField";
+			productReference = 2CE6B923266BCDFC75EA22BC /* libPods-Brewstribution-MLPAutoCompleteTextField.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		538B8A69841BA2B803291D05 /* Pods-Brewstribution-ActionSheetPicker-3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 859441BF64390BD86BFD9E10 /* Build configuration list for PBXNativeTarget "Pods-Brewstribution-ActionSheetPicker-3.0" */;
+			buildPhases = (
+				06C15B13DC3EBE8CE605C943 /* Sources */,
+				AD330DEA64539D7A4961AF16 /* Frameworks */,
+				0FFB8BF1B73F9D61B2F3A9BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Brewstribution-ActionSheetPicker-3.0";
+			productName = "Pods-Brewstribution-ActionSheetPicker-3.0";
+			productReference = 7413FAEDCEF11766FC843758 /* libPods-Brewstribution-ActionSheetPicker-3.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		803C445C1E16CC830D74EDCB /* Pods-Brewstribution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DCFA8E33C1634A22B693C9 /* Build configuration list for PBXNativeTarget "Pods-Brewstribution" */;
+			buildPhases = (
+				67641476721578FF7B8445AE /* Sources */,
+				A47643B2083C57E3796E85D9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A56ADEBB5B581B044AC34506 /* PBXTargetDependency */,
+				BE1A70D924A4151C36784416 /* PBXTargetDependency */,
+			);
+			name = "Pods-Brewstribution";
+			productName = "Pods-Brewstribution";
+			productReference = 36D999A4E678FDE6B8C6FB52 /* libPods-Brewstribution.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E074998E3FEDCA7D98764E83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = D7042316F9A4C8E30D41D7E4 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1798CFE985F7D054287B96AF;
+			productRefGroup = 6EF387EC5849D755D628A66B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803C445C1E16CC830D74EDCB /* Pods-Brewstribution */,
+				538B8A69841BA2B803291D05 /* Pods-Brewstribution-ActionSheetPicker-3.0 */,
+				2FF9D7D7259FC9F24F5A1706 /* Pods-Brewstribution-MLPAutoCompleteTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C15B13DC3EBE8CE605C943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DABA0F30C23FDE362D2A77 /* AbstractActionSheetPicker.m in Sources */,
+				0B467490D586E1076CC0A015 /* ActionSheetCustomPicker.m in Sources */,
+				DA1D187AFE39A27EC5605009 /* ActionSheetDatePicker.m in Sources */,
+				6B52FF0A464A15C81B670132 /* ActionSheetDistancePicker.m in Sources */,
+				27F9A96640642A70E2FC3BFD /* ActionSheetLocalePicker.m in Sources */,
+				2F9D681DB67F28F62784CBC7 /* ActionSheetStringPicker.m in Sources */,
+				2AD4E01A551F05A998F1CD7B /* DistancePickerView.m in Sources */,
+				0AFC6FAB4FBC18ED6D94C12F /* Pods-Brewstribution-ActionSheetPicker-3.0-dummy.m in Sources */,
+				0D1D76BE7C660B52F9C622F6 /* SWActionSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3F93926824CE7CD19D095B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE72455276ABB1B09554A75 /* MLPAutoCompleteTextField.m in Sources */,
+				7AF717065CE9D780A2E18674 /* NSString+Levenshtein.m in Sources */,
+				84FF6835DABD866435FAD679 /* Pods-Brewstribution-MLPAutoCompleteTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67641476721578FF7B8445AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C698FA8DB7F90573F208697C /* Pods-Brewstribution-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A56ADEBB5B581B044AC34506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Brewstribution-ActionSheetPicker-3.0";
+			target = 538B8A69841BA2B803291D05 /* Pods-Brewstribution-ActionSheetPicker-3.0 */;
+			targetProxy = 9D4B8F2857953AFA88C2C791 /* PBXContainerItemProxy */;
+		};
+		BE1A70D924A4151C36784416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Brewstribution-MLPAutoCompleteTextField";
+			target = 2FF9D7D7259FC9F24F5A1706 /* Pods-Brewstribution-MLPAutoCompleteTextField */;
+			targetProxy = D549235E43BC6F6EFA3A1C48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		116F3281C64F835A2BC73E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3DDA99F1BE935A11B15DC6 /* Pods-Brewstribution-MLPAutoCompleteTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Brewstribution-MLPAutoCompleteTextField/Pods-Brewstribution-MLPAutoCompleteTextField-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		23CA936CD1795C42E48F96C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39534C35BFCA1DEE5DC95FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33C1586A978FA2D2DC2CE2E /* Pods-Brewstribution-ActionSheetPicker-3.0-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Brewstribution-ActionSheetPicker-3.0/Pods-Brewstribution-ActionSheetPicker-3.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4C64AF5AE6CE7E5B13D93355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8621942F32E0DCE75F7AE9D8 /* Pods-Brewstribution.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8E97196FCF87662354692853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33C1586A978FA2D2DC2CE2E /* Pods-Brewstribution-ActionSheetPicker-3.0-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Brewstribution-ActionSheetPicker-3.0/Pods-Brewstribution-ActionSheetPicker-3.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B9BA947BEAD75FC22FE536D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9DF659FBEBEB54B31940B1 /* Pods-Brewstribution.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D62997D4A5171CEF890EA012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F44ADF7F5333F7C0FDDC73F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3DDA99F1BE935A11B15DC6 /* Pods-Brewstribution-MLPAutoCompleteTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Brewstribution-MLPAutoCompleteTextField/Pods-Brewstribution-MLPAutoCompleteTextField-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		859441BF64390BD86BFD9E10 /* Build configuration list for PBXNativeTarget "Pods-Brewstribution-ActionSheetPicker-3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E97196FCF87662354692853 /* Debug */,
+				39534C35BFCA1DEE5DC95FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8CC8605ACED108A60D83906 /* Build configuration list for PBXNativeTarget "Pods-Brewstribution-MLPAutoCompleteTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44ADF7F5333F7C0FDDC73F9 /* Debug */,
+				116F3281C64F835A2BC73E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7042316F9A4C8E30D41D7E4 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D62997D4A5171CEF890EA012 /* Debug */,
+				23CA936CD1795C42E48F96C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DCFA8E33C1634A22B693C9 /* Build configuration list for PBXNativeTarget "Pods-Brewstribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C64AF5AE6CE7E5B13D93355 /* Debug */,
+				B9BA947BEAD75FC22FE536D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E074998E3FEDCA7D98764E83 /* Project object */;
+}
